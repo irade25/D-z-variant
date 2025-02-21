@@ -1,0 +1,90 @@
+body {
+  font-family: "Dosis", sans-serif;
+  font-weight: 500;
+}
+
+#demo .bigbox .minibox {
+  border: 3px solid #060e09;
+  transition: 3s;
+}
+#demo .bigbox .minibox h1 {
+  font-size: 25px;
+  color: #f32323;
+}
+#demo .bigbox .minibox:hover {
+  width: 300px;
+}
+#demo .bigbox .minibox:hover h1 {
+  color: #24d760;
+}
+#demo .smallbox {
+  display: flex;
+  justify-content: flex-end;
+}
+#demo .smallbox .minibox {
+  border: 3px solid #1555cb;
+  transition: 2s;
+}
+#demo .smallbox .minibox h1 {
+  font-size: 25px;
+  color: #060e09;
+  padding: 15px 15px;
+  transition: 1s;
+}
+#demo .smallbox .minibox:hover {
+  border-radius: 50px;
+  background-color: rgba(240, 35, 168, 0.1803921569);
+}
+#demo .smallbox .minibox:hover h1 {
+  color: #1555cb;
+  font-size: 35px;
+}
+#demo .btn {
+  display: flex;
+  justify-content: center;
+  background-color: #24d760;
+  width: 100px;
+  height: 100px;
+  border-radius: 30px;
+}
+#demo .btn h1 {
+  font-size: 20px;
+  color: white;
+  padding: 15px 15px;
+  transition: 1s;
+}
+#demo .btn:hover {
+  background-color: #1555cb;
+}
+#demo .btn:hover h1 {
+  font-size: 25px;
+}
+@media screen and (min-width: 500px) {
+  #demo .minibox {
+    width: 80px;
+    height: 80px;
+  }
+  #demo .btn {
+    border-radius: 30px;
+  }
+}
+@media screen and (min-width: 700px) {
+  #demo .minibox {
+    width: 100px;
+    height: 100px;
+    background-color: #d9ed26;
+  }
+  #demo .btn {
+    border-radius: 40px;
+  }
+}
+@media screen and (min-width: 900px) {
+  #demo .minibox {
+    width: 200px;
+    height: 200px;
+    background-color: rgba(240, 35, 168, 0.1725490196);
+  }
+  #demo .btn {
+    border-radius: 50px;
+  }
+}/*# sourceMappingURL=style.css.map */

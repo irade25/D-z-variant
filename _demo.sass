@@ -1,0 +1,70 @@
+#demo
+    .bigbox
+        .minibox
+            border: 3px solid #060e09
+            transition: 3s
+            h1
+                font-size: 25px
+                color: #f32323
+
+            &:hover
+                width: 300px
+                h1
+                    color:  #24d760
+    .smallbox
+        display: flex
+        justify-content: flex-end
+        .minibox
+            border: 3px solid #1555cb
+            transition: 2s
+
+            h1
+                font-size: 25px
+                color: #060e09
+                padding: 15px 15px
+                transition: 1s
+            &:hover
+                border-radius: 50px
+                background-color: #f023a82e
+                h1
+                    color:  #1555cb
+                    font-size: 35px
+    .btn
+        display: flex
+        justify-content: center
+        background-color: #24d760
+        width: 100px
+        height: 100px
+        border-radius: 30px
+        h1
+            font-size: 20px
+            color: #ffff
+            padding: 15px 15px
+            transition: 1s
+        &:hover
+            background-color:  #1555cb
+            h1
+                font-size: 25px
+
+    @media screen and (min-width: 500px)
+        .minibox
+            width: 80px
+            height: 80px
+        .btn
+            border-radius: 30px
+
+    @media screen and (min-width: 700px)
+        .minibox
+            width: 100px
+            height: 100px
+            background-color:  #d9ed26
+        .btn
+            border-radius: 40px
+
+    @media screen and (min-width: 900px)
+        .minibox
+            width: 200px
+            height: 200px
+            background-color:  #f023a82c
+        .btn
+            border-radius: 50px
